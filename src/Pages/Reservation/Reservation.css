@@ -1,0 +1,106 @@
+.k-reservation{
+    display: flex;
+}
+
+.k-reservation .left{
+    width: 43%;
+    height: 100vh;
+    max-height: 100%;
+    background-color: #0D375F    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.k-reservation .left img{
+    width: 340px;
+    max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    
+}
+
+@media(max-width:767px){
+    .k-reservation .left {
+        display: none;
+    }
+}
+
+
+.k-reservation .right{
+    background-color: #262222;
+    width: 57%;
+    height: 100vh;
+    
+}
+
+
+
+
+@media(max-width:767px){
+    .k-reservation .right{
+        width: 100%;
+    }
+}
+
+.k-reservation .right h3{
+text-align: center;
+color: white;
+font-weight: bold;
+font-size: 40px;
+margin: 35px 0px;
+}
+
+.k-reservation .right .k-inputs{
+display: grid;
+grid-template-columns: 1fr 1fr;
+direction: rtl;
+padding: 15px;
+}
+
+
+.k-reservation .right .k-inputs .k-field{
+background-color: transparent;
+border: none;
+border-bottom: 3px solid #777474;
+width: 200px;
+caret-color: #777474;
+color: white;
+margin-bottom: 20px;
+transition: .3s;
+    padding: 8px 5px;
+}
+
+.k-reservation .right .k-inputs .k-field:focus  {
+outline: none;
+width: 210px;
+}
+
+.k-reservation .right .k-inputs .k-field::placeholder{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 7px;
+    transition: .3s;
+
+}
+
+.k-reservation .right form .btn{
+    display: block;
+    width: 200px;
+    padding: 13px 24px ;
+    background-color:#342e2e ;
+    font-weight: bold;
+    color: rgba(251, 248, 248, 0.728);
+    border: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 19px;
+}
+
+.k-reservation .right form .btn:hover{
+    background-color:#3d3737 ;
+    color: rgba(255, 255, 255, 0.995)
+}
+

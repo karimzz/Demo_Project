@@ -34,8 +34,9 @@
   
   .form-box {
       position: relative;
+      padding: 11px 0px;
       width: 400px;
-      height: 450px;
+      height: 100%;
       background: transparent;
       border: 2px solid rgba(255, 255, 255, 0.5);
       border-radius: 20px;
@@ -134,6 +135,24 @@
   .form-value a:hover {
       background-color: #ac8601;
       transform: scale(1.1);
+  }
+
+  .form-box .btn{
+    background-color: #ac8601;
+    border-radius: 24px;
+    padding: 9px 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    margin: 0px auto;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .form-box .btn:hover{
+    background-color: #ac8701d4;
+
   }
   
   /* .register {
