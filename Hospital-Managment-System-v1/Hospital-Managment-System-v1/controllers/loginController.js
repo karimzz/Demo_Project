@@ -36,7 +36,7 @@ exports.login = asyncHandler(async (req, res, next) => {
       { expiresIn: "1h" } // Token expires in 1 hour, adjust as needed
     );
 
-    res.status(200).json({ message: "login successfully", token });
+    res.status(200).json({ message: "login successfully" , user_id : user.id, token });
   } catch (error) {
     // Pass the error to the next middleware for centralized error handling
     next(error);
